@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <style>
+        .trai{
+            text-align: left;
+            color: rgb(218, 219, 249);
+        }
+        .cen{
+            text-align: center;
+            color: rgb(193, 207, 245);
+        }
+    </style>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+<body class="hinhnen" style="text-align: center">
+    <h1 class="cen">Đăng nhập tài khoản</h1>
+    <form action="xulydn">
+        <table align="center">
+            <tr>
+                <td class="trai">Tên đăng nhập</td>
+                <td><input type="text" id="ten" name="ten"></td>
+            </tr>
+            <tr>
+                <td class="trai">Mật khẩu</td>
+                <td><input type="password" id="matkhau" name="matkhau"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="dk" id="dk" value="Dang nhap"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
